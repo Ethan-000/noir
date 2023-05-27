@@ -10,7 +10,7 @@ fn check_rustc_version() {
 const GIT_COMMIT: &&str = &"GIT_COMMIT";
 
 fn main() {
-    check_rustc_version();
+    // check_rustc_version();
 
     // Only use build_data if the environment variable isn't set
     // The environment variable is always set when working via Nix

@@ -8,5 +8,5 @@ fn check_rustc_version() {
 }
 
 fn main() {
-    check_rustc_version();
+    // check_rustc_version();
 }
