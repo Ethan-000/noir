@@ -39,7 +39,7 @@ tokio = "1.0"
 
 # Backends
 acvm-backend-barretenberg = { version = "0.1.2", default-features = false , optional = true}
-halo2_backend = {path = "../../../halo2_backend", default-features = false, optional = true}
+halo2_backend = { git = "https://github.com/Ethan-000/halo2_backend", branch = "demo", default-features = false, optional = true}
 
 [dev-dependencies]
 tempdir = "0.3.7"
