@@ -1705,7 +1705,6 @@ dependencies = [
 [[package]]
 name = "halo2_backend"
 version = "0.1.0"
-source = "git+https://github.com/Ethan-000/halo2_backend?branch=demo#92d59d8a11899d9984f72e19d875b65231a9bfce"
 dependencies = [
  "acvm 0.12.0",
  "bincode",
