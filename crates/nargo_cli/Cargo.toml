@@ -43,7 +43,7 @@ color-eyre = "0.6.2"
 tokio = "1.0"
 
 # Backends
-acvm-backend-barretenberg = { version = "0.3.0", default-features = false, optional = true }
+acvm-backend-barretenberg = { version = "0.4.0", default-features = false, optional = true }
 halo2_backend = {path = "../../../halo2_backend", default-features = false, optional = true }
 
 [dev-dependencies]
