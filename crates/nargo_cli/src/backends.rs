@@ -10,7 +10,12 @@ cfg_if::cfg_if! {
     }
 }
 
-#[cfg(not(any(feature = "plonk_bn254", feature = "plonk_bn254_wasm")))]
+#[cfg(not(any(
+    feature = "plonk_bn254",
+    feature = "plonk_bn254_wasm",
+    feature = "axiom_halo2_backend",
+    feature = "pse_halo2_backend",
+)))]
 compile_error!("please specify a backend to compile with");
 
 #[cfg(all(feature = "plonk_bn254", feature = "plonk_bn254_wasm"))]
