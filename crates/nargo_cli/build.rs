@@ -5,7 +5,7 @@ use std::io::Write;
 use std::path::{Path, PathBuf};
 use std::{env, fs};
 
-fn check_rustc_version() {
+fn _check_rustc_version() {
     assert!(
         version().unwrap() >= Version::parse("1.66.0").unwrap(),
         "The minimal supported rustc version is 1.66.0."
@@ -18,7 +18,7 @@ fn main() {
     // Rebuild if the tests have changed
     println!("cargo:rerun-if-changed=tests");
 
-    check_rustc_version();
+    // check_rustc_version();
 
     // Only use build_data if the environment variable isn't set
     // The environment variable is always set when working via Nix
