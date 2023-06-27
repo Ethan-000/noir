@@ -49,8 +49,8 @@ tokio = { version = "1.0", features = ["io-std"] }
 # Backends
 acvm-backend-barretenberg = { version = "0.5.1", default-features = false, optional = true }
 
-noir_halo2_backend_axiom = { path = "../../../../crates/noir_halo2_backend_axiom", optional = true }
-noir_halo2_backend_pse = { path = "../../../../crates/noir_halo2_backend_pse", optional = true }
+noir_halo2_backend_axiom = { git = "https://github.com/Ethan-000/halo2_backend", tag = "v0.1.2", optional = true }
+noir_halo2_backend_pse = { git = "https://github.com/Ethan-000/halo2_backend", tag = "v0.1.2", optional = true }
 
 [dev-dependencies]
 tempdir = "0.3.7"
