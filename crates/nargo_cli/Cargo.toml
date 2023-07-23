@@ -55,6 +55,12 @@ tempdir = "0.3.7"
 assert_cmd = "2.0.8"
 assert_fs = "1.0.10"
 predicates = "2.1.5"
+criterion = "0.4.0"
+pprof = { version = "0.11", features = [
+    "flamegraph",
+    "frame-pointer",
+    "criterion",
+] }
 
 [features]
 default = ["plonk_bn254"]
