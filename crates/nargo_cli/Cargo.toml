@@ -62,6 +62,10 @@ pprof = { version = "0.11", features = [
     "criterion",
 ] }
 
+[[bench]]
+name = "bench_eddsa"
+harness = false
+
 [features]
 default = ["plonk_bn254"]
 # The plonk backend can only use bn254, so we do not specify the field
